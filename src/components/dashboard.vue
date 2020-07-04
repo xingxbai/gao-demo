@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-04 23:00:40
+ * @LastEditTime: 2020-07-04 23:44:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -895,7 +895,7 @@ export default {
 .certificate-content-item{
     width:23%;
     display: inline-block;
-    padding: 6px;
+    padding: 5px 5px 0 5px;
     border: 1px solid #bbb;
     margin-right: 2%;
     box-sizing: border-box;
