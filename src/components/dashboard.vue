@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-04 17:33:50
+ * @LastEditTime: 2020-07-04 23:00:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -20,19 +20,12 @@
                 <!-- <img src="https://zh.xuehuiwang.com/newpower/baidu/search/xueli/3/images/phone1.png" alt=""> -->
                 <div class="phone-top"> 
                     <img src="../static/img/座机.png" alt="" style="width:18px;margin-right:5px;">
-                    <p>
+                    <p style="letter-spacing: 1px;">
                         029 - 88758048
                     </p>
                     
                 </div>
-                <p>
-                    学信网
-                    <span class="red">终身可查、</span>
-                    正规
-                    <span class="red">学历、</span>
-                    国家
-                    <span class="red">承认</span>
-                </p>
+                <p>学信网<span class="red">终身可查、</span>正规学历、国家承认</p>
             </div>
         </div>
         <div class="body">
@@ -244,8 +237,8 @@
                 <h1 class="h1">
                     高薪热门专业，涵盖各个行业
                 </h1>
-                <div class="hot-content">
-                    <div class="hot-content-wrapper">
+                <div class="hot-content" style="margin-top: 35px;">
+                    <div class="hot-content-wrapper" >
                         <div class="hot-content-item" v-for="item in 5">
                             <div class="hot-content-item-left">财经管理类: </div>
                             <div class="hot-content-item-right">
@@ -291,7 +284,7 @@
                 <h1 class="h1">
                     提升一次学历，您将受益终生
                 </h1>
-                <div class="benefit-content">
+                <div class="benefit-content" style="margin-top:35px">
                     <div class="benefit-content-wrapper">
                         <div class="benefit-content-item">
                             <div class="benefit-content-item-header">
@@ -386,6 +379,27 @@
                     </div>
                 </div>
             </div>
+            <div class="certificate">
+                <!-- <img src="../static/img/zheng.png" alt="" style="width:100%"> -->
+                <div class="certificate-line"></div>
+                <div class="certificate-name">
+                    <div class="certificate-title">证书样本</div>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-content-item">
+                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                    </div>
+                    <div class="certificate-content-item">
+                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                    </div>
+                    <div class="certificate-content-item">
+                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                    </div>
+                    <div class="certificate-content-item">
+                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -467,7 +481,7 @@ export default {
     padding-right: 10px;
 }
 .phone .phone-top{
-    width: 180px;
+    width: 200px;
     line-height:26px;
     margin: 0 auto;
     border-radius: 20px;
@@ -843,5 +857,53 @@ export default {
     padding: 5px 10px;
     line-height: 22px;;
     color:#fff;
+}
+.certificate{
+    padding: 0 17%;
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+.certificate-line{
+    width: 99%;
+    border-bottom: .5px solid red;
+    box-shadow: 2px 2px 5px 2px red;
+}
+.certificate-name{
+    font-size: 26px;
+    margin-top:1px;
+    
+    
+    display: flex;
+    justify-content: center;
+}
+.certificate-title{
+    width: 200px;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 10px;
+    background: red;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+.certificate-content{
+    width: 100%;
+    display: inline-block;
+}
+.certificate-content-item{
+    width:23%;
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #bbb;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.certificate-content-item:hover{
+    transform:scale(1.1);
+}
+.certificate-content-item{
+    margin-top: 40px;
 }
 </style>
