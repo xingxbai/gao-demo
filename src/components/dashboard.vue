@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-04 23:44:49
+ * @LastEditTime: 2020-07-05 19:08:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -159,24 +159,24 @@
                             </div>
                         </div>
                         <div class="promote-content-item orange" style="background: #ffb32c;">
-                            <h3>电大 / 国开</h3>
+                            <h3>远程教育</h3>
                             <p>校考入学</p>
                             <div class="promote-content-item-pag">
-                                正规学历,学信网可查。网络教学和面授辅导相结合, 适应不同需求。学费低廉,分次交费。
+                                正规学历，学信网可查。无地域限制，上课时间灵活。网络教学，与时俱进。211、985名校证书。
                             </div>
                         </div>
                         <div class="promote-content-item">
-                            <h3>电大 / 国开</h3>
-                            <p>校考入学</p>
+                            <h3>成人高考</h3>
+                            <p>统考入学</p>
                             <div class="promote-content-item-pag">
-                                正规学历,学信网可查。网络教学和面授辅导相结合, 适应不同需求。学费低廉,分次交费。
+                                正规学历，学信网可查。全国统一考试,弥补高考落榜/错过的遗憾。在职也能考学历。
                             </div>
                         </div>
                         <div class="promote-content-item orange" style="background: #ffb32c;">
-                            <h3>电大 / 国开</h3>
-                            <p>校考入学</p>
+                            <h3>自学考试</h3>
+                            <p>免试入学</p>
                             <div class="promote-content-item-pag">
-                                正规学历,学信网可查。网络教学和面授辅导相结合, 适应不同需求。学费低廉,分次交费。
+                                正规学历，学信网可查。考试难度大，认可度高;学历不限，毕业时间短;费用低，在职修学历。
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="promote-bottom red-border">
+                <div class="promote-bottom red-border" style="margin-top:0px">
                     咨询入口
                 </div>
             </div>
@@ -239,11 +239,109 @@
                 </h1>
                 <div class="hot-content" style="margin-top: 35px;">
                     <div class="hot-content-wrapper" >
-                        <div class="hot-content-item" v-for="item in 5">
+                        <div class="hot-content-item">
                             <div class="hot-content-item-left">财经管理类: </div>
                             <div class="hot-content-item-right">
-                                <div v-for="item in 4" class="right-content">
+                                <div class="right-content">
+                                    <span>工商管理</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>会计学</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>行政管理</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>人力资源</span>
+                                </div>
+                                <div class="more">+ 更多</div>
+                            </div>
+                        </div>
+
+                        <div class="hot-content-item">
+                            <div class="hot-content-item-left"  style="background:#64A5C3">土建类: </div>
+                            <div class="hot-content-item-right">
+                                <div class="right-content">
                                     <span>土木工程</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>建设工程管理</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>工程造价</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>道路桥梁</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>水利水电</span>
+                                </div>
+                                <div class="more">+ 更多</div>
+                            </div>
+                        </div>
+
+                        <div class="hot-content-item">
+                            <div class="hot-content-item-left">师范语言类: </div>
+                            <div class="hot-content-item-right">
+                                <div class="right-content">
+                                    <span>汉语言文学</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>教育管理</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>小学教育</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>学前教育</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>英语</span>
+                                </div>
+                                <div class="more">+ 更多</div>
+                            </div>
+                        </div>
+
+                        <div class="hot-content-item">
+                            <div class="hot-content-item-left" style="background:#64A5C3">计算机类: </div>
+                            <div class="hot-content-item-right">
+                                <div class="right-content">
+                                    <span>计算机科学与技术</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>计算机信息管理</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>计算机网络技术</span>
+                                </div>
+                                <div class="more">+ 更多</div>
+                            </div>
+                        </div>
+
+                        <div class="hot-content-item">
+                            <div class="hot-content-item-left">机械制造类: </div>
+                            <div class="hot-content-item-right">
+                                <div class="right-content">
+                                    <span>机电一体化</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>机械设计制造及其自动化</span>
+                                </div>
+                                <div class="more">+ 更多</div>
+                            </div>
+                        </div>
+
+                        <div class="hot-content-item">
+                            <div class="hot-content-item-left" style="background:#64A5C3">医学类: </div>
+                            <div class="hot-content-item-right">
+                                <div class="right-content">
+                                    <span>护理学</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>药学</span>
+                                </div>
+                                <div class="right-content">
+                                    <span>药品经营与管理</span>
                                 </div>
                                 <div class="more">+ 更多</div>
                             </div>
@@ -260,20 +358,43 @@
                 <div class="question-content">
                     <div class="question-content-wrapper">
                             <div class="question-content-item-left">
-                                <div class="question-item" v-for="item in 5">
-                                    大概多久能拿到证书
+                                <div class="question-item">
+                                    大概多久能拿到证书?
+                                </div>
+                                <div class="question-item">
+                                    学历含金量高不高?
+                                </div>
+                                <div class="question-item">
+                                    需要到校参加考试么?
+                                </div>
+                                <div class="question-item">
+                                    有没有不用去学校的，简单的?
+                                </div>
+                                <div class="question-item">
+                                    工作忙，时间少，怎么升学历?
                                 </div>
                             </div>
                             <div class="question-content-item-middle">
                                 <div>
                                     <img src="../static/img/图层 56.png" alt="" style="width:110px;">
                                 </div>
-                                
                                 <div class="watch-result">查看答案</div>
                             </div>
                             <div class="question-content-item-right">
-                                <div class="question-item" v-for="item in 5">
-                                    大概多久能拿到证书
+                                <div class="question-item">
+                                    初中毕业可以升学历吗?
+                                </div>
+                                <div class="question-item">
+                                    考证时间多长?有简单的吗?
+                                </div>
+                                <div class="question-item">
+                                    女生学习什么专业好呢?
+                                </div>
+                                <div class="question-item">
+                                    既便宜又好过的是哪种?
+                                </div>
+                                <div class="question-item">
+                                    可以不去学校上课吗?
                                 </div>
                             </div>
                     </div>
@@ -286,29 +407,7 @@
                 </h1>
                 <div class="benefit-content" style="margin-top:35px">
                     <div class="benefit-content-wrapper">
-                        <div class="benefit-content-item">
-                            <div class="benefit-content-item-header">
-                                升职加薪
-                            </div>
-                            <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
-                            </div>
-                            <div class="benefit-content-item-footer">
-                                点击了解
-                            </div>
-                        </div>
-                        <div class="benefit-content-item corn" style="background:#D1CDC7">
-                            <div class="benefit-content-item-header">
-                                升职加薪
-                            </div>
-                            <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
-                            </div>
-                            <div class="benefit-content-item-footer">
-                                点击了解
-                            </div>
-                        </div>
-                        <div class="benefit-content-item">
+                        <div class="benefit-content-item" >
                             <div class="benefit-content-item-header">
                                 升职加薪
                             </div>
@@ -321,45 +420,10 @@
                         </div>
                         <div class="benefit-content-item" style="background:#D1CDC7">
                             <div class="benefit-content-item-header">
-                                升职加薪
+                                职称评定
                             </div>
                             <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
-                            </div>
-                            <div class="benefit-content-item-footer">
-                                点击了解
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefit-content-wrapper" style="margin-top: 3px">
-                        <div class="benefit-content-item" style="background:#D1CDC7">
-                            <div class="benefit-content-item-header">
-                                升职加薪
-                            </div>
-                            <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
-                            </div>
-                            <div class="benefit-content-item-footer">
-                                点击了解
-                            </div>
-                        </div>
-                        <div class="benefit-content-item corn" >
-                            <div class="benefit-content-item-header">
-                                升职加薪
-                            </div>
-                            <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
-                            </div>
-                            <div class="benefit-content-item-footer">
-                                点击了解
-                            </div>
-                        </div>
-                        <div class="benefit-content-item" style="background:#D1CDC7">
-                            <div class="benefit-content-item-header">
-                                升职加薪
-                            </div>
-                            <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
+                                高学历是评定职称的加分项
                             </div>
                             <div class="benefit-content-item-footer">
                                 点击了解
@@ -367,10 +431,67 @@
                         </div>
                         <div class="benefit-content-item" >
                             <div class="benefit-content-item-header">
-                                升职加薪
+                                考研深造
                             </div>
                             <div class="benefit-content-item-body">
-                                学历直接与工资、职位晋升挂钩
+                                本科学历是考研的基本条件
+                            </div>
+                            <div class="benefit-content-item-footer">
+                                点击了解
+                            </div>
+                        </div>
+                        <div class="benefit-content-item corn" style="background:#D1CDC7">
+                            <div class="benefit-content-item-header">
+                                出国留学
+                            </div>
+                            <div class="benefit-content-item-body">
+                                许多国家承认我国的成人本科学历
+                            </div>
+                            <div class="benefit-content-item-footer">
+                                点击了解
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefit-content-wrapper" style="margin-top:5px">
+                        <div class="benefit-content-item" style="background:#D1CDC7">
+                            <div class="benefit-content-item-header">
+                                考资格证书
+                            </div>
+                            <div class="benefit-content-item-body">
+                                学历是考某些资格证的必要条件
+                            </div>
+                            <div class="benefit-content-item-footer">
+                                点击了解
+                            </div>
+                        </div>
+                        <div class="benefit-content-item" >
+                            <div class="benefit-content-item-header">
+                                求职就业
+                            </div>
+                            <div class="benefit-content-item-body">
+                                学历是找到好工作的敲门砖
+                            </div>
+                            <div class="benefit-content-item-footer">
+                                点击了解
+                            </div>
+                        </div>
+                        <div class="benefit-content-item" style="background:#D1CDC7">
+                            <div class="benefit-content-item-header">
+                                考公务员
+                            </div>
+                            <div class="benefit-content-item-body">
+                                大专以上学历可参加公务员考试
+                            </div>
+                            <div class="benefit-content-item-footer">
+                                点击了解
+                            </div>
+                        </div>
+                        <div class="benefit-content-item corn" >
+                            <div class="benefit-content-item-header">
+                                积分落户
+                            </div>
+                            <div class="benefit-content-item-body">
+                                学历越高，积分落户越容易
                             </div>
                             <div class="benefit-content-item-footer">
                                 点击了解
@@ -743,6 +864,8 @@ export default {
 }
 .browse-content-item{
     width: 24%;
+    margin-bottom: 25px;
+    line-height: 26px;
     display: inline-block;
     box-sizing: border-box;
 }
@@ -759,12 +882,16 @@ export default {
 }
 .hot-content-item-left{
     padding:10px 20px;
+    width: 90px;
+    text-align: center;
     font-weight: 700;
     background: #3597bc;
 }
 .hot-content-item-right{
     padding:10px 20px;
     display: flex;
+    font-weight: 700;
+    font-size: 14px;
     flex: 1;
     position: relative;
     background: #1274a1;
@@ -777,6 +904,7 @@ export default {
     position: absolute;
     right:10px;
     top: 5px;
+    font-weight: 400;
     font-size: 14px;
     text-align: center;
     color:#fff;
@@ -831,6 +959,7 @@ export default {
 }
 .benefit-content-item{
     width: 24%;
+    min-height: 180px;
     display: inline-block;
     box-sizing: border-box;
     flex: 1;
@@ -838,6 +967,7 @@ export default {
     margin-right: 1%;
     padding:20px 10px 10px 10px;
     text-align: center;
+    position: relative;
 }
 .benefit-content-item-header{
     font-size: 24px;
@@ -848,7 +978,9 @@ export default {
     font-weight: 700;
 }
 .benefit-content-item-footer{
-    
+    position: absolute;
+    left: 16%;
+    bottom: 20px;
     width: 60%;
     margin: 15px auto;
     margin-bottom: 0;
@@ -874,8 +1006,6 @@ export default {
 .certificate-name{
     font-size: 26px;
     margin-top:1px;
-    
-    
     display: flex;
     justify-content: center;
 }
@@ -885,6 +1015,7 @@ export default {
     font-weight: 700;
     padding: 5px 10px;
     background: red;
+    border-top-width: 0;
     letter-spacing: 2px;
     border-radius: 8px;
 }
