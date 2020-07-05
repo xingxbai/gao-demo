@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-05 19:53:08
+ * @LastEditTime: 2020-07-06 00:45:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -36,10 +36,16 @@
             </div>
             <swiper ref="mySwiper" :options="swiperOptions" >
                 <swiper-slide>
-                    <img src="../static/img/page1.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/Ƭ1.jpg" alt="" style="width:100%;height:550px">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/page2.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/Ƭ2.jpg" alt="" style="width:100%;height:550px">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../static/img/三张banner图2.jpg" alt="" style="width:100%;height:550px">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../static/img/三张banner图副本.jpg" alt="" style="width:100%;height:550px">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
@@ -115,25 +121,25 @@
                     <p>无论你什么学历，总有一种方案属于你</p>
                     <div class="project-content-wrapper">
                         <div class="project-content-item">
-                            <h3>专升本</h3>
+                            <h3 class="project-content-item-title">专升本</h3>
                             <p>大学专科层次学生进入本科层次阶段学习。
                                 <p>学制：2.5年</p>
                             </p>
                         </div>
                         <div class="project-content-item orange">
-                            <h3>高起专</h3>
+                            <h3 class="project-content-item-title">高起专</h3>
                             <p>高中同等学历（高中、中专、中技、职高)起点学历报考专科学历。
                                 <p>学制：2.5年</p>
                             </p>
                         </div>
                         <div class="project-content-item">
-                            <h3>高起本</h3>
+                            <h3 class="project-content-item-title">高起本</h3>
                             <p>高中学历层次学生进入本科层级阶段学习。
                                 <p>学制：5年</p>
                             </p>
                         </div>
                         <div class="project-content-item orange">
-                            <h3>专本同读</h3>
+                            <h3 class="project-content-item-title">专本同读</h3>
                             <p>报考专科的同时，学习并参加本科自学考试，学生在专科毕业的同时能获得自考本科文凭</p>
                         </div>
                     </div>
@@ -155,28 +161,28 @@
                     <p>总有一种适合你</p>
                     <div class="promote-content-wrapper">
                         <div class="promote-content-item">
-                            <h3>电大 / 国开</h3>
+                            <h3 class="project-content-item-title">电大 / 国开</h3>
                             <p>校考入学</p>
                             <div class="promote-content-item-pag">
                                 正规学历,学信网可查。网络教学和面授辅导相结合, 适应不同需求。学费低廉,分次交费。
                             </div>
                         </div>
                         <div class="promote-content-item orange" style="background: #ffb32c;">
-                            <h3>远程教育</h3>
+                            <h3 class="project-content-item-title">远程教育</h3>
                             <p>校考入学</p>
                             <div class="promote-content-item-pag">
                                 正规学历，学信网可查。无地域限制，上课时间灵活。网络教学，与时俱进。211、985名校证书。
                             </div>
                         </div>
                         <div class="promote-content-item">
-                            <h3>成人高考</h3>
+                            <h3 class="project-content-item-title">成人高考</h3>
                             <p>统考入学</p>
                             <div class="promote-content-item-pag">
                                 正规学历，学信网可查。全国统一考试,弥补高考落榜/错过的遗憾。在职也能考学历。
                             </div>
                         </div>
                         <div class="promote-content-item orange" style="background: #ffb32c;">
-                            <h3>自学考试</h3>
+                            <h3 class="project-content-item-title">自学考试</h3>
                             <p>免试入学</p>
                             <div class="promote-content-item-pag">
                                 正规学历，学信网可查。考试难度大，认可度高;学历不限，毕业时间短;费用低，在职修学历。
@@ -421,7 +427,7 @@
                                 点击了解
                             </div>
                         </div>
-                        <div class="benefit-content-item" style="background:#D1CDC7">
+                        <div class="benefit-content-item" style="background:#9D9D9D">
                             <div class="benefit-content-item-header">
                                 职称评定
                             </div>
@@ -443,7 +449,7 @@
                                 点击了解
                             </div>
                         </div>
-                        <div class="benefit-content-item corn" style="background:#D1CDC7">
+                        <div class="benefit-content-item corn" style="background:#9D9D9D">
                             <div class="benefit-content-item-header">
                                 出国留学
                             </div>
@@ -455,8 +461,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="benefit-content-wrapper" style="margin-top:5px">
-                        <div class="benefit-content-item" style="background:#D1CDC7">
+                    <div class="benefit-content-wrapper" style="margin-top:12px">
+                        <div class="benefit-content-item" style="background:#9D9D9D">
                             <div class="benefit-content-item-header">
                                 考资格证书
                             </div>
@@ -478,7 +484,7 @@
                                 点击了解
                             </div>
                         </div>
-                        <div class="benefit-content-item" style="background:#D1CDC7">
+                        <div class="benefit-content-item" style="background:#9D9D9D">
                             <div class="benefit-content-item-header">
                                 考公务员
                             </div>
@@ -511,16 +517,16 @@
                 </div>
                 <div class="certificate-content">
                     <div class="certificate-content-item">
-                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                        <img src="../static/img/国3.jpg" alt="" style="width:100%">
                     </div>
                     <div class="certificate-content-item">
-                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                        <img src="../static/img/国4.png" alt="" style="width:100%">
                     </div>
                     <div class="certificate-content-item">
-                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                        <img src="../static/img/国开学位证.jpg" alt="" style="width:100%">
                     </div>
                     <div class="certificate-content-item">
-                        <img src="../static/img/国2.jpg" alt="" style="width:100%">
+                        <img src="../static/img/1236.jpg" alt="" style="width:100%">
                     </div>
                 </div>
             </div>
@@ -688,7 +694,7 @@ export default {
     cursor: pointer;
 }
 .overview{
-    padding: 0 17%;
+    padding: 0 14%;
     text-align: center;
 }
 .overflow-img{
@@ -757,7 +763,7 @@ export default {
     border-top: 1px solid #aaa;
 }
 .project {
-    padding: 0 17%;
+    padding: 0 14%;
     text-align: center;
 }
 .project_content{
@@ -817,18 +823,21 @@ export default {
 }
 .red-border{
     display: inline-block;
-    padding: 5px 60px;
+    padding: 10px 60px;
     color:#fff;
     letter-spacing: 3px;
     background: red;
     line-height: 24px;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 auto;
     margin-top: 35px;
     border-radius: 20px;
 }
+.red-border:hover{
+    font-size: 26px;
+}
 .promote {
-    padding: 0 17%;
+    padding: 0 14%;
     text-align: center;
 }
 .promote-content-wrapper {
@@ -856,12 +865,12 @@ export default {
     margin:0 auto;
 }
 .browse{
-    padding: 0 17%;
+    padding: 0 14%;
     text-align: center;
 }
 .browse-content-wrapper{
     display: inline-block;
-    width: 76%;
+    width: 100%;
     margin-top: 40px;
     padding-bottom: 20px;
 }
@@ -873,7 +882,7 @@ export default {
     box-sizing: border-box;
 }
 .hot{
-    padding: 0 17%;
+    padding: 0 14%;
 }
 
 .hot-content-wrapper{
@@ -916,7 +925,7 @@ export default {
     border: 1px solid #fff;
 }
 .question{
-    padding: 0 17%;
+    padding: 0 14%;
 }
 .question-content-wrapper{
     display: flex;
@@ -954,7 +963,7 @@ export default {
     font-weight: normal;
 }
 .benefit{
-    padding: 0 17%;
+    padding: 0 14%;
 }
 .benefit-content-wrapper{
     display: inline-block;
@@ -971,6 +980,9 @@ export default {
     padding:20px 10px 10px 10px;
     text-align: center;
     position: relative;
+}
+.benefit-content-item:hover{
+    transform:scale(1.05);
 }
 .benefit-content-item-header{
     font-size: 24px;
@@ -994,7 +1006,7 @@ export default {
     color:#fff;
 }
 .certificate{
-    padding: 0 17%;
+    padding: 0 14%;
     margin-top: 60px;
     text-align: center;
     display: flex;
@@ -1032,6 +1044,7 @@ export default {
     padding: 5px 5px 0 5px;
     border: 1px solid #bbb;
     margin-right: 2%;
+    vertical-align: middle;
     box-sizing: border-box;
 }
 .certificate-content-item:hover{
@@ -1039,5 +1052,14 @@ export default {
 }
 .certificate-content-item{
     margin-top: 40px;
+}
+.tabbar-item{
+    width: 80px;
+}
+.tabbar-item:hover{
+    font-size: 20px;
+}
+.project-content-item-title:hover{
+    color:#f40;
 }
 </style>
