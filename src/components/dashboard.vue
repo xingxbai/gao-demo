@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-05 19:08:15
+ * @LastEditTime: 2020-07-05 19:53:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -36,7 +36,10 @@
             </div>
             <swiper ref="mySwiper" :options="swiperOptions" >
                 <swiper-slide>
-                    <img src="../static/img/page.png" alt="" style="width:100%">
+                    <img src="../static/img/page1.jpg" alt="" style="width:100%;">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../static/img/page2.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
