@@ -578,8 +578,7 @@ export default {
 
 <style scoped>
 .dashborad{
-    overflow-y: scroll;
-    overflow-x: hidden;
+    
 }
 .header{
     height: 100px;
