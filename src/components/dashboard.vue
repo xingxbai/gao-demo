@@ -36,16 +36,16 @@
             </div>
             <swiper ref="mySwiper" :options="swiperOptions" >
                 <swiper-slide>
-                    <img src="../static/img/Ƭ1.jpg" alt="" style="width:100%;height:550px">
+                    <img src="../static/img/Ƭ1.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/Ƭ2.jpg" alt="" style="width:100%;height:550px">
+                    <img src="../static/img/Ƭ2.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/三张banner图2.jpg" alt="" style="width:100%;height:550px">
+                    <img src="../static/img/三张banner图2.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/三张banner图副本.jpg" alt="" style="width:100%;height:550px">
+                    <img src="../static/img/三张banner图副本.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
