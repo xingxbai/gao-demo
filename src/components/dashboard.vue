@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-06 00:45:41
+ * @LastEditTime: 2020-07-07 00:29:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -23,7 +23,6 @@
                     <p style="letter-spacing: 1px;">
                         029 - 88758048
                     </p>
-                    
                 </div>
                 <p>学信网<span class="red">终身可查、</span>正规学历、国家承认</p>
             </div>
@@ -36,16 +35,16 @@
             </div>
             <swiper ref="mySwiper" :options="swiperOptions" >
                 <swiper-slide>
-                    <img src="../static/img/Ƭ1.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/横幅二.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/Ƭ2.jpg" alt="" style="width:100%;">
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="../static/img/三张banner图2.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/横幅一.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
                     <img src="../static/img/三张banner图副本.jpg" alt="" style="width:100%;">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../static/img/三张banner图2.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
@@ -71,7 +70,7 @@
                         <div class="overflow-img-wrapper-item" style="position:relative">
                             <img src="../static/img/bg.png" alt="" style="width:78%;">
                             <p style="position:absolute;left:16%;top:165px;font-size:22px;color:#fff">初中毕业</p>
-                            <p style="position:absolute;left:76%;top:165px;font-size:22px;color:#fff">初中毕业</p>
+                            <p style="position:absolute;left:76%;top:165px;font-size:22px;color:#fff">高职毕业</p>
                             <p style="position:absolute;left:16%;bottom:-33px;font-size:22px;color:#fff">高中毕业</p>
                             <p style="position:absolute;left:45%;bottom:-33px;font-size:22px;color:#fff">大专毕业</p>
                             <p style="position:absolute;left:76%;bottom:-33px;font-size:22px;color:#fff">中专毕业</p>
@@ -122,25 +121,25 @@
                     <div class="project-content-wrapper">
                         <div class="project-content-item">
                             <h3 class="project-content-item-title">专升本</h3>
-                            <p>大学专科层次学生进入本科层次阶段学习。
+                            <p style="margin-top:20px;font-size:16px">大学专科层次学生进入本科层次阶段学习。
                                 <p>学制：2.5年</p>
                             </p>
                         </div>
                         <div class="project-content-item orange">
                             <h3 class="project-content-item-title">高起专</h3>
-                            <p>高中同等学历（高中、中专、中技、职高)起点学历报考专科学历。
+                            <p  style="margin-top:20px;font-size:16px">高中同等学历（高中、中专、中技、职高)起点学历报考专科学历。
                                 <p>学制：2.5年</p>
                             </p>
                         </div>
                         <div class="project-content-item">
                             <h3 class="project-content-item-title">高起本</h3>
-                            <p>高中学历层次学生进入本科层级阶段学习。
+                            <p  style="margin-top:20px;font-size:16px">高中学历层次学生进入本科层级阶段学习。
                                 <p>学制：5年</p>
                             </p>
                         </div>
                         <div class="project-content-item orange">
                             <h3 class="project-content-item-title">专本同读</h3>
-                            <p>报考专科的同时，学习并参加本科自学考试，学生在专科毕业的同时能获得自考本科文凭</p>
+                            <p  style="margin-top:20px;font-size:16px">报考专科的同时，学习并参加本科自学考试，学生在专科毕业的同时能获得自考本科文凭</p>
                         </div>
                     </div>
                     <div class="project-bottom red-border">
@@ -148,8 +147,15 @@
                     </div>
                 </div>
             </div>
-
+            <!-- <div class="wechat">
+                <div class="wechat-compress">
+                    <div class="wechat-compress-item" v-for="item in 4">
+                        <img src="../static/img/img3.png" alt="">
+                    </div>
+                </div>
+            </div> -->
             <div class="promote">
+                
                 <h1 class="header-title h1">提升学历
                     <span>四大</span>
                     <span class="red">正规形式</span>解析
@@ -204,35 +210,35 @@
                 <div class="browse-content">
                     <div class="browse-content-wrapper">
                         <div class="browse-content-item"  >
-                            <img src="../static/img/4_01.png" alt="" style="width:80px">
+                            <img src="../static/img/4_01.png" alt="" style="width:120px">
                             <p>报考人群</p>
                         </div>
                         <div class="browse-content-item" >
-                            <img src="../static/img/4_02.png" alt="" style="width:80px">
+                            <img src="../static/img/4_02.png" alt="" style="width:120px">
                             <p>报考层次</p>
                         </div>
                         <div class="browse-content-item">
-                            <img src="../static/img/4_03.png" alt="" style="width:80px">
+                            <img src="../static/img/4_03.png" alt="" style="width:120px">
                             <p>报考时间</p>
                         </div>
                         <div class="browse-content-item" >
-                            <img src="../static/img/4_04.png" alt="" style="width:80px">
+                            <img src="../static/img/4_04.png" alt="" style="width:120px">
                             <p>报考途径</p>
                         </div>
                         <div class="browse-content-item"  >
-                            <img src="../static/img/4_05.png" alt="" style="width:80px">
+                            <img src="../static/img/4_05.png" alt="" style="width:120px">
                             <p>学习方式</p>
                         </div>
                         <div class="browse-content-item">
-                            <img src="../static/img/4_06.png" alt="" style="width:80px">
+                            <img src="../static/img/4_06.png" alt="" style="width:120px">
                             <p>专业推荐</p>
                         </div>
                         <div class="browse-content-item">
-                            <img src="../static/img/4_07.png" alt="" style="width:80px">
+                            <img src="../static/img/4_07.png" alt="" style="width:120px">
                             <p>多久拿证</p>
                         </div>
                         <div class="browse-content-item" >
-                            <img src="../static/img/4_08.png" alt="" style="width:80px">
+                            <img src="../static/img/4_08.png" alt="" style="width:120px">
                             <p>学习费用</p>
                         </div>
                     </div>
@@ -414,7 +420,7 @@
                 <h1 class="h1">
                     提升一次学历，您将受益终生
                 </h1>
-                <div class="benefit-content" style="margin-top:35px">
+                <div class="benefit-content" style="margin-top:20px;font-size:16px">
                     <div class="benefit-content-wrapper">
                         <div class="benefit-content-item" >
                             <div class="benefit-content-item-header">
@@ -454,7 +460,7 @@
                                 出国留学
                             </div>
                             <div class="benefit-content-item-body">
-                                许多国家承认我国的成人本科学历
+                                许多国家承认我国成人本科学历
                             </div>
                             <div class="benefit-content-item-footer">
                                 点击了解
@@ -510,11 +516,11 @@
                 </div>
             </div>
             <div class="certificate">
-                <!-- <img src="../static/img/zheng.png" alt="" style="width:100%"> -->
-                <div class="certificate-line"></div>
+                <img src="../static/img/zheng.png" alt="" style="width:90%;margin-left:5%;height:65px;transform:scaleY(0.9);">
+                <!-- <div class="certificate-line"></div>
                 <div class="certificate-name">
                     <div class="certificate-title">证书样本</div>
-                </div>
+                </div> -->
                 <div class="certificate-content">
                     <div class="certificate-content-item">
                         <img src="../static/img/国3.jpg" alt="" style="width:100%">
@@ -530,6 +536,25 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="header" style="background:#2496C6">
+            <div class="logo">
+                <img src="../static/img/img3.png" alt="" style="width: 85px">
+            </div>
+            <div class="title" style="color:#fff">
+                <h2>成人学历提升中心</h2>
+            </div>
+            <div class="phone">
+                <!-- <img src="https://zh.xuehuiwang.com/newpower/baidu/search/xueli/3/images/phone1.png" alt=""> -->
+                <div class="phone-top" style="width:300px;height:50px;right: 10px;left:0;margin-top:10px;color:#fff;border:1px dashed #fff"> 
+                    <img src="../static/img/座机.png" alt="" style="width:30px;margin-right:5px;">
+                    <p style="letter-spacing: 1px;color:#fff;font-size:30px">
+                        029 - 88758048
+                    </p>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </template>
@@ -548,9 +573,15 @@ export default {
                 pagination: {
                     el: '.swiper-pagination',
                 },
-                autoplay:true,
+                autoplay: {
+                    delay: 10000,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: true,
+                    loop:true
+                },
+                
             },
-            tabBar: ['远程教育','成人高考','电大国开','自学考试','院校毕业','热门专业'],
+            tabBar: ['电大国开','远程教育','成人高考','自学考试','院校毕业','热门专业'],
             cardArr: [
                 {
                     title: '了解学历提升方式',
@@ -578,7 +609,6 @@ export default {
 
 <style scoped>
 .dashborad{
-    
 }
 .header{
     height: 100px;
@@ -722,7 +752,7 @@ export default {
     font-weight: 600;
     border: 13px solid #f7f7f7;
     position: absolute;
-    top: -30%;
+    top: -28%;
     left: 40%;
     box-sizing: border-box;
     background: #2f97c6;
@@ -731,6 +761,7 @@ export default {
     height: 180px;
     border-radius: 90px;
     line-height: 26px;
+    font-size: 22px;
 }
 .h1{
     margin-top: 60px;
@@ -762,8 +793,15 @@ export default {
     border-top: 1px solid #aaa;
 }
 .project {
-    padding: 0 14%;
+    padding: 1px 0 20px 0;
+    width: 72%;
+    margin: auto;
+    background: #EEF3F9;
     text-align: center;
+    margin-top: 40px;
+}
+.project h1{
+    margin-top: 20px
 }
 .project_content{
     position: relative;
@@ -790,18 +828,23 @@ export default {
     border-top: 1px solid #aaa;
 }
 .project-content-wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    /* justify-content: space-around; */
 }
 .project-content-item{
     /* flex: 1; */
+    display: inline-block;
     box-sizing: border-box;
-    height: 184px;
-    width: 184px;
+    height: 237px;
+    min-width: 237px;
+    width: 23%;
+    height: calc(24%- 1px);
+    margin-left: 10px;
+    vertical-align: middle;
     border-radius: 50%;
     background: #2f97c6;
     color: #fff;
-    padding: 15px;
+    padding:40px 15px 15px 15px;
     margin-top: 40px;
 }
 .project-content-item h3{
@@ -841,14 +884,17 @@ export default {
 }
 .promote-content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .promote-content-item{
     box-sizing: border-box;
-    width: 24%;
+    /* width: 24%; */
+    flex: 1;
+    margin-right: 15px;
+    max-width: 195px;
     background: #2f97c6;
     color: #000;
-    padding: 10px 10px 20px 10px;
+    padding: 10px 5px 20px 5px;
     margin-top: 40px;
 }
 .promote-content-item h3{
@@ -859,19 +905,24 @@ export default {
     margin: 8px 0 15px 0
 }
 .promote-content-item-pag{
-    width: 70%;
+    padding: 0 10px 20px 10px;
     text-align: left;
-    margin:0 auto;
 }
-.browse{
-    padding: 0 14%;
+.browse {
+    padding: 1px 0 20px 0;
+    width: 72%;
+    margin: auto;
+    background: #EEF3F9;
     text-align: center;
+    margin-top: 40px;
+}
+.browse h1{
+    margin-top: 20px
 }
 .browse-content-wrapper{
     display: inline-block;
     width: 100%;
     margin-top: 40px;
-    padding-bottom: 20px;
 }
 .browse-content-item{
     width: 24%;
@@ -880,29 +931,43 @@ export default {
     display: inline-block;
     box-sizing: border-box;
 }
-.hot{
-    padding: 0 14%;
+.browse-content-item p {
+    margin-top: 20px;
+    font-size: 22px;
 }
+/* .hot{
+    padding: 0 14%;
+} */
+.hot {
+    padding: 0 14%;
+    text-align: center;
 
+    margin-top: 30px;
+}
+.hot h1{
+    margin-top: 20px
+}
 .hot-content-wrapper{
     
 }
 .hot-content-item{
     display: flex;
-    margin-bottom:4px;
+    line-height: 35px;
+    font-size: 24px;
+    margin-bottom:10px;
 }
 .hot-content-item-left{
     padding:10px 20px;
-    width: 90px;
+    width: 130px;
     text-align: center;
     font-weight: 700;
     background: #3597bc;
 }
 .hot-content-item-right{
-    padding:10px 20px;
+    padding:10px 40px 10px 30px;
     display: flex;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     flex: 1;
     position: relative;
     background: #1274a1;
@@ -914,7 +979,8 @@ export default {
     width: 50px;
     position: absolute;
     right:10px;
-    top: 5px;
+    line-height: 30px;
+    top: 9px;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
@@ -923,14 +989,23 @@ export default {
     padding: 3px 7px;
     border: 1px solid #fff;
 }
-.question{
-    padding: 0 14%;
+.question {
+    padding: 1px 0 20px 0;
+    width: 72%;
+    margin: auto;
+    background: #EEF3F9;
+    text-align: center;
+    margin-top: 40px;
+}
+.question h1{
+    margin-top: 20px
 }
 .question-content-wrapper{
     display: flex;
     margin-top: 35px;
 }
 .question-content-item-left{
+    
     flex: 1
 }
 .question-content-item-right{
@@ -938,16 +1013,17 @@ export default {
 }
 .question-item{
     padding: 5px 10px;
+    line-height: 35px;
     border: 2px solid #0079ba;
     border-radius: 8px;
-    margin-bottom: 10px;
-    line-height: 22px;
+    margin-bottom: 15px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
 }
 .question-content-item-middle{
     width:200px;
     text-align: center;
+    margin-top: 20px
 }
 .watch-result{
     display: inline-block;
@@ -957,32 +1033,38 @@ export default {
     padding: 5px 10px;
     box-sizing: border-box;
     width: 120px;
-    margin-top: 15px;
+    margin-top: 80px;
     color: #fff;
     font-weight: normal;
 }
-.benefit{
+/* .benefit{
     padding: 0 14%;
+} */
+.benefit {
+    width: 76%;
+    margin: 0 auto;
 }
 .benefit-content-wrapper{
     display: inline-block;
     width: 100%;
+    text-align: center;
 }
 .benefit-content-item{
-    width: 24%;
-    min-height: 180px;
+    width: 23%;
+    max-width: 248px;
+    min-height: 197px;
     display: inline-block;
     box-sizing: border-box;
-    flex: 1;
+    /* flex: 1; */
     background: #FEFAF1;
-    margin-right: 1%;
+    margin-right: 10px;
     padding:20px 10px 10px 10px;
     text-align: center;
     position: relative;
 }
-.benefit-content-item:hover{
+/* .benefit-content-item:hover{
     transform:scale(1.05);
-}
+} */
 .benefit-content-item-header{
     font-size: 24px;
     font-weight: 700;
@@ -1003,6 +1085,9 @@ export default {
     padding: 5px 10px;
     line-height: 22px;;
     color:#fff;
+}
+.benefit-content-item-footer:hover{
+    transform:scale(1.1);
 }
 .certificate{
     padding: 0 14%;
@@ -1060,5 +1145,12 @@ export default {
 }
 .project-content-item-title:hover{
     color:#f40;
+}
+.wechat{
+    display: flex;
+    padding: 0 14%;
+}
+.wechat-compress{
+    display: flex;
 }
 </style>
