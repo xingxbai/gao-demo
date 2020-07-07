@@ -835,10 +835,8 @@ export default {
     /* flex: 1; */
     display: inline-block;
     box-sizing: border-box;
+    width: 237px;
     height: 237px;
-    min-width: 237px;
-    width: 23%;
-    height: calc(24%- 1px);
     margin-left: 10px;
     vertical-align: middle;
     border-radius: 50%;
