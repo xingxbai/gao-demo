@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-09 02:20:47
+ * @LastEditTime: 2020-07-10 01:17:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -34,17 +34,18 @@
                 </div>
             </div>
             <swiper ref="mySwipers" :options="swiperOptions" >
+                
                 <swiper-slide>
-                    <img src="../static/img/横幅二.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/001.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/横幅一.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/002.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/三张banner图副本.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/01.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <swiper-slide>
-                    <img src="../static/img/三张banner图2.jpg" alt="" style="width:100%;">
+                    <img src="../static/img/02.jpg" alt="" style="width:100%;">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
@@ -59,7 +60,7 @@
                 </div>
             </div> -->
             <div class="overview">
-                <h1 class="h1">
+                <h1 class="h1" style="margin-top:50px">
                     大专本科<span class="red">报考信息概览</span>
                 </h1>
                 <div class="pag-content">
@@ -69,8 +70,8 @@
                     <div class="overflow-img-wrapper">
                         <div class="overflow-img-wrapper-item" style="position:relative;width:100%">
                             <img src="../static/img/bg.png" alt="" style="width:89%;margin-right: 16px;">
-                            <p style="position:absolute;left:12%;top:255px;font-size:22px;color:#fff">初中毕业</p>
-                            <p style="position:absolute;left:80%;top:255px;font-size:22px;color:#fff">高职毕业</p>
+                            <p style="position:absolute;left:12%;top:242px;font-size:22px;color:#fff">初中毕业</p>
+                            <p style="position:absolute;left:80%;top:251px;font-size:22px;color:#fff">高职毕业</p>
                             <p style="position:absolute;left:12%;bottom:-33px;font-size:22px;color:#fff">高中毕业</p>
                             <p style="position:absolute;left:45%;bottom:-33px;font-size:22px;color:#fff">大专毕业</p>
                             <p style="position:absolute;left:80%;bottom:-33px;font-size:22px;color:#fff">中专毕业</p>
@@ -107,7 +108,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="project">
                 <h1 class="header-title h1" style="margin-top:70px">上班族专属
                     <span class="red">学历提升</span>
@@ -158,6 +159,136 @@
                 </div>
             </div> -->
 
+
+
+            <div class="new">
+                <h1 class="h1">2020年学历报考信息了解专区</h1>
+                <div class="new-one">
+                    <div class="new-one-swiper" style="width:425px;height:183px">
+                        滚动图
+                    </div>
+                    <div class="new-one-info">
+                        <h1>2020学历提升报考指南，新人必备</h1>
+                        <div class="new-one-item-wrapper">
+                            <div class="new-one-item">
+                                <div class="new-one-item-content">2020年学历提升考试报名时间</div>
+                                <div class="new-one-item-advisory">点击咨询</div>
+                            </div>
+                            <div class="new-one-item">
+                                <div class="new-one-item-content">考试申请条件:基本条件,院校附加条件</div>
+                                <div class="new-one-item-advisory">点击咨询</div>
+                            </div>
+                            <div class="new-one-item">
+                                <div class="new-one-item-content">院校资讯:汇聚详细的自考院校专业信息</div>
+                                <div class="new-one-item-advisory">点击咨询</div>
+                            </div>
+                            <div class="new-one-item">
+                                <div class="new-one-item-content">深度解析交大、东北财大及其他名校考试申请的具体流程</div>
+                                <div class="new-one-item-advisory">点击咨询</div>
+                            </div>
+                            <div class="new-one-item">
+                                <div class="new-one-item-content">2020年学历提升报考指南:自考政策、招生简章、学制学费汇总</div>
+                                <div class="new-one-item-advisory">点击咨询</div>
+                            </div>
+                            <div class="new-one-item">
+                                <div class="new-one-item-content">28所自主划线院校招生简章汇总</div>
+                                <div class="new-one-item-advisory">点击咨询</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <div class="new-three">
+                    <div class="new-three-left">
+                        <h2 class="new-three-header">
+                            <span>热点</span>
+                            2020年学历报名备考指南</h2>
+                        <div class="new-three-item" v-for="item in newThreeLeftData">
+                            <div class="new-three-item-content">{{item}}</div>
+                        </div>
+                    </div>
+                    <div class="new-three-right">
+                        <h2 class="new-three-header">
+                            <span>热点</span>
+                            2020年学历报考事项咨询解答</h2>
+                        <div class="new-three-item" v-for="item in newThreeRightData">
+                            <div class="new-three-item-content">{{item}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-two">
+                    <div class="new-two-wrapper">
+                        <div class="new-two-item" v-for="item in newTwoData">
+                            {{item}}>>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="promote">
+                <h1 class="header-title h1" style="margin-top:40px">提升学历
+                    <span>四大</span>
+                    <span class="red">正规形式</span>解析
+                </h1>
+                <div class="promote_content">
+                    <img src="../static/img/灯泡.png" alt="" style="width:35px">
+                </div>
+                <div class="promote-content">
+                    <p>总有一种适合你</p>
+                    <div class="promote-content-wrapper">
+                        <div class="promote-content-item" style="margin-left: 30px">
+                            <h3 class="project-content-item-title">电大 / 国开</h3>
+                            <p>校考入学</p>
+                            <div class="promote-content-item-pag">
+                                正规学历,学信网可查。网络教学和面授辅导相结合, 适应不同需求。学费低廉,分次交费。
+                            </div>
+                            <div class="detail-wrapper">
+                                <div class="detail">电大咨询入口</div>
+                            </div>
+                        </div>
+                        <div class="promote-content-item orange" style="background: #ffb32c;">
+                            <h3 class="project-content-item-title">远程教育</h3>
+                            <p>校考入学</p>
+                            <div class="promote-content-item-pag">
+                                正规学历，学信网可查。无地域限制，上课时间灵活。网络教学，与时俱进。211、985名校证书。
+                            </div>
+                            <div class="detail-wrapper">
+                                <div class="detail">成考咨询入口</div>
+                            </div>
+                        </div>
+                        <div class="promote-content-item">
+                            <h3 class="project-content-item-title">成人高考</h3>
+                            <p>统考入学</p>
+                            <div class="promote-content-item-pag">
+                                正规学历，学信网可查。全国统一考试,弥补高考落榜/错过的遗憾。在职也能考学历。
+                            </div>
+                            <div class="detail-wrapper">
+                                <div class="detail">远程咨询入口</div>
+                            </div>
+                        </div>
+                        <div class="promote-content-item orange" style="background: #ffb32c;">
+                            <h3 class="project-content-item-title">自学考试</h3>
+                            <p>免试入学</p>
+                            <div class="promote-content-item-pag">
+                                正规学历，学信网可查。考试难度大，认可度高;学历不限，毕业时间短;费用低，在职修学历。
+                            </div>
+                            <div class="detail-wrapper">
+                                <div class="detail">自考咨询入口</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promote-bottom red-border" style="margin-top:50px;margin-bottom:60px">
+                        了解报考详情 > >
+                    </div>
+                </div>
+            </div>
+
+
+            
             <div class="browse" style="padding-bottom:50px">
                 <h1 class="h1" style="margin-top:60px">
                     <span class="red">100</span>次浏览
@@ -204,58 +335,9 @@
                     咨询入口
                 </div>
             </div>
-            <div class="promote">
-                
-                <h1 class="header-title h1">提升学历
-                    <span>四大</span>
-                    <span class="red">正规形式</span>解析
-                </h1>
-                <div class="promote_content">
-                    <img src="../static/img/灯泡.png" alt="" style="width:35px">
-                </div>
-                <div class="promote-content">
-                    <p>总有一种适合你</p>
-                    <div class="promote-content-wrapper">
-                        <div class="promote-content-item" style="margin-left: 30px">
-                            <h3 class="project-content-item-title">电大 / 国开</h3>
-                            <p>校考入学</p>
-                            <div class="promote-content-item-pag">
-                                正规学历,学信网可查。网络教学和面授辅导相结合, 适应不同需求。学费低廉,分次交费。
-                            </div>
-                            <div class="detail">电大咨询入口</div>
-                        </div>
-                        <div class="promote-content-item orange" style="background: #ffb32c;">
-                            <h3 class="project-content-item-title">远程教育</h3>
-                            <p>校考入学</p>
-                            <div class="promote-content-item-pag">
-                                正规学历，学信网可查。无地域限制，上课时间灵活。网络教学，与时俱进。211、985名校证书。
-                            </div>
-                            <div class="detail">成考咨询入口</div>
-                        </div>
-                        <div class="promote-content-item">
-                            <h3 class="project-content-item-title">成人高考</h3>
-                            <p>统考入学</p>
-                            <div class="promote-content-item-pag">
-                                正规学历，学信网可查。全国统一考试,弥补高考落榜/错过的遗憾。在职也能考学历。
-                            </div>
-                            <div class="detail">远程咨询入口</div>
-                        </div>
-                        <div class="promote-content-item orange" style="background: #ffb32c;">
-                            <h3 class="project-content-item-title">自学考试</h3>
-                            <p>免试入学</p>
-                            <div class="promote-content-item-pag">
-                                正规学历，学信网可查。考试难度大，认可度高;学历不限，毕业时间短;费用低，在职修学历。
-                            </div>
-                            <div class="detail">自考咨询入口</div>
-                        </div>
-                    </div>
-                    <div class="promote-bottom red-border" style="margin-top:20px;margin-bottom:60px">
-                        了解报考详情 > >
-                    </div>
-                </div>
-            </div>
+           
 
-            
+
 
             <div class="hot">
                 <h1 class="h1" style="margin-top:60px">
@@ -402,7 +484,7 @@
                         </div>
                     </div>
                     <div class="promote-bottom red-border" style="margin-top:30px">
-                        其他咨询
+                        其他专业咨询
                     </div>
                 </div>
             </div>
@@ -416,42 +498,72 @@
                     <div class="question-content-wrapper">
                             <div class="question-content-item-left">
                                 <div class="question-item">
-                                    大概多久能拿到证书?
+                                    <div style="flex:1">
+                                        大概多久能拿到证书?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    学历含金量高不高?
+                                    <div style="flex:1">
+                                        学历含金量高不高?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    需要到校参加考试么?
+                                    <div style="flex:1">
+                                        需要到校参加考试么?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    有没有不用去学校的，简单的?
+                                    <div style="flex:1">
+                                        有没有不用去学校的，简单的?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    工作忙，时间少，怎么升学历?
+                                    <div style="flex:1">
+                                        工作忙，时间少，怎么升学历?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                             </div>
                             <div class="question-content-item-middle">
                                 <div>
-                                    <img src="../static/img/图层 56.png" alt="" style="width:110px;">
+                                    <img src="../static/img/图层 56.png" alt="" style="width:140px;">
                                 </div>
-                                <div class="watch-result">查看答案</div>
+                                <div class="watch-result">查看更多常见问题></div>
                             </div>
                             <div class="question-content-item-right">
                                 <div class="question-item">
-                                    初中毕业可以升学历吗?
+                                    <div style="flex:1">
+                                        初中毕业可以升学历吗?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    考证时间多长?有简单的吗?
+                                    <div style="flex:1">
+                                        考证时间多长?有简单的吗?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    女生学习什么专业好呢?
+                                    <div style="flex:1">
+                                        女生学习什么专业好呢?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    既便宜又好过的是哪种?
+                                    <div style="flex:1">
+                                        既便宜又好过的是哪种?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                                 <div class="question-item">
-                                    可以不去学校上课吗?
+                                    <div style="flex:1">
+                                        可以不去学校上课吗?
+                                    </div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
                                 </div>
                             </div>
                     </div>
@@ -459,7 +571,7 @@
             </div>
 
             <div class="benefit">
-                <h1 class="h1">
+                <h1 class="h1" style="margin-top:70px;margin-bottom:45px">
                     提升一次学历，您将受益终生
                 </h1>
                 <div class="benefit-content" style="margin-top:20px;font-size:16px">
@@ -683,7 +795,10 @@ export default {
                     title: '2020年学历报考开始',
                     child: ['西安交通大学','西安理工大学','陕西师范大学','西北大学','了解更多院校']
                 }
-            ]
+            ],
+            newTwoData: ['考试时间','考试科目','考试教材','报名咨询','报名条件','毕业时间','学位咨询'],
+            newThreeLeftData: ['[动态]    关于2020年成人学历报考通告>>','[动态]    关于2020年成人学历招生简章>>','[动态]    2020年成人学历报考管理办法>>','[动态]    2020年上半年学历报考院校及专业咨询>>'],
+            newThreeRightData: ['[政策]    2020年学历报考及考试政策信息汇总>>','[试听]    学历考试培训课程免费试听>>','[经验]    新生学历报考备考经验>>','[模拟]    学历报考各专业考试模拟题汇总>>']
         }
     },
     computed: {
@@ -853,7 +968,13 @@ export default {
     height: 240px;
     border-radius: 120px;
     line-height: 26px;
-    font-size: 22px;
+    font-size: 30px;
+}
+.circle:hover{
+    color: red;
+}
+.circle p {
+    line-height: 48px;
 }
 .h1{
     margin-top: 100px;
@@ -969,7 +1090,7 @@ export default {
     box-sizing: border-box;
     width: 237px;
     height: 237px;
-    margin-left: 65px;
+    margin-left: 40px;
     vertical-align: middle;
     border-radius: 50%;
     background: #2f97c6;
@@ -1061,7 +1182,7 @@ export default {
     padding: 1px 0 20px 0;
     width: 100%;
     /* margin: auto; */
-    background: #EEF3F9;
+    /* background: #EEF3F9; */
     text-align: center;
 }
 .browse h1{
@@ -1070,12 +1191,12 @@ export default {
 .browse-content-wrapper{
     display: inline-block;
     margin: auto;
-    width: 72%;
+    width: 80%;
     margin-top: 40px;
 }
 .browse-content-item{
     width: 24%;
-    margin-bottom: 25px;
+    margin-bottom: 67px;
     line-height: 26px;
     display: inline-block;
     box-sizing: border-box;
@@ -1144,7 +1265,6 @@ export default {
     padding: 1px 0 20px 0;
     width: 72%;
     margin: auto;
-    background: #EEF3F9;
     text-align: center;
     margin-top: 40px;
 }
@@ -1163,8 +1283,10 @@ export default {
     flex: 1
 }
 .question-item{
-    padding: 5px 10px;
+    padding: 5px 10px 5px 15px;
     line-height: 35px;
+    text-align: left;
+    display: flex;
     border: 2px solid #0079ba;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -1172,21 +1294,33 @@ export default {
     font-size: 18px;
 }
 .question-content-item-middle{
-    width:200px;
+    width:270px;
     text-align: center;
     margin-top: 20px
 }
 .watch-result{
     display: inline-block;
-    background: #3288AD;
+    background: #DD6C6A;
     border-radius: 4px;
     line-height: 30px;
     padding: 5px 10px;
     box-sizing: border-box;
-    width: 120px;
-    margin-top: 80px;
+    width: 160px;
+    margin-top: 34px;
     color: #fff;
     font-weight: normal;
+    width: 213px;
+    height: 40px;
+    background-color: red;
+    font-family: 'SimHei', 'Microsoft Yahei';
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+.watch-result:hover{
+    opacity: .8;
 }
 /* .benefit{
     padding: 0 14%;
@@ -1331,7 +1465,6 @@ export default {
 .detail{
     position: absolute;
     bottom: 30px;
-    left: 40px;
     font-size: 20px!important;
     border-radius: 40px;
     width: 180px;
@@ -1343,15 +1476,122 @@ export default {
     text-align: center;
     color: #fff;
 }
-/* .swiper-container{
-    --swiper-theme-color: #ff6600;
-    --swiper-navigation-color: #fff;
-    --swiper-navigation-size: 80px;
-  } */
-  /* .swiper-button-prev {
-      background: #A1A1A1;
-  }
-  .swiper-button-next{
-      background: #A1A1A1;
-  } */
+.detail-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.new{
+    width: 72%;
+    margin: 60px auto 50px auto;
+}
+.new-one{
+    display: flex;
+    margin-top: 40px;
+}
+.new-one-info{
+    flex: 1;
+    border: 1px solid #eae7e3;
+    -webkit-box-shadow: 1px 2px 3px 0 #f0ece7;
+    box-shadow: 1px 2px 3px 0 #f0ece7;
+    border-radius: 5px;
+    background: #fff;
+}
+.new-one-info h1{
+    height: 51px;
+    width: 68%;
+    line-height: 51px;
+    padding-left: 20px;
+    background: #2496C6;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 0 0 100px 0;
+}
+.new-one-item-wrapper{
+    padding-bottom: 15px;
+}
+
+.new-one-item{
+    margin-top: 11.4px;
+    padding: 0 20px 0 18px;
+    display: flex;
+    font-size: 18px;
+}
+.new-one-item-content{
+    flex: 1;
+}
+.new-one-item-advisory{
+    background: #2496C6;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    float: right;
+    width: 89px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.new-two-wrapper{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.new-two-item{
+    /* flex: 1; */
+    height: 40px;
+    width: 120px;
+    background: #2496C6;
+    font-family: "Microsoft YaHei",Arial;
+    font-size: 12px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+}
+.new-three{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.new-three-left{
+    
+}
+.new-three-header{
+    font-size: 30px;
+    font-weight: 400;
+    color: #252525;
+    font-family: "Microsoft YaHei",Arial;
+    padding-bottom: 10px;
+    margin: 0 0 0px 0;
+}
+
+.new-three-header span{
+    background: #2496C6;
+    color: #fff;
+    padding: 0 2px;
+    font-size: 16px;
+}
+
+.new-three-right{
+
+}
+.new-three-item{
+    font-size: 18px;
+    color: #555555;
+    line-height: 35px;
+    font-family: "Microsoft YaHei",Arial;
+}
+
+.new-three-item:hover{
+    color: red;
+};
+
+
+
+
+
+
 </style>
