@@ -1020,6 +1020,7 @@ export default {
 .promote-content-wrapper {
     display: flex;
     width: 76%;
+    justify-content: center;
     margin: auto;
     /* justify-content: space-around; */
 }
