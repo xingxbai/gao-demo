@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-10 22:54:10
+ * @LastEditTime: 2020-07-10 23:30:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -303,7 +303,7 @@
 
             
             <div class="browse" style="padding-bottom:50px">
-                <h1 class="h1" style="margin-top:40px">
+                <h1 class="h1" style="margin-top:20px">
                     <span class="red">100</span>次浏览
                     &nbsp
                     不如 <span class="red">1 </span>次问个清楚
@@ -504,7 +504,7 @@
 
 
             <div class="question">
-                <h1 class="h1">
+                <h1 class="h1" style="margin-bottom:42px">
                     您顾虑的问题，我们都能解决
                 </h1>
                 <div class="question-content">
@@ -1365,7 +1365,7 @@ export default {
     display: flex;
     border: 2px solid #0079ba;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-weight: 700;
     font-size: 18px;
 }
@@ -1382,7 +1382,7 @@ export default {
     padding: 5px 10px;
     box-sizing: border-box;
     width: 160px;
-    margin-top: 34px;
+    margin-top: 78px;
     color: #fff;
     font-weight: normal;
     width: 213px;
