@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-10 22:35:22
+ * @LastEditTime: 2020-07-10 22:54:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -514,31 +514,31 @@
                                     <div style="flex:1">
                                         大概多久能拿到证书?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         学历含金量高不高?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         需要到校参加考试么?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         有没有不用去学校的，简单的?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         工作忙，时间少，怎么升学历?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                             </div>
                             <div class="question-content-item-middle">
@@ -552,31 +552,31 @@
                                     <div style="flex:1">
                                         初中毕业可以升学历吗?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         考证时间多长?有简单的吗?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         女生学习什么专业好呢?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         既便宜又好过的是哪种?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         可以不去学校上课吗?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
                                 </div>
                             </div>
                     </div>
