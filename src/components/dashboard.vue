@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-10 01:17:18
+ * @LastEditTime: 2020-07-10 22:35:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -34,7 +34,6 @@
                 </div>
             </div>
             <swiper ref="mySwipers" :options="swiperOptions" >
-                
                 <swiper-slide>
                     <img src="../static/img/001.jpg" alt="" style="width:100%;">
                 </swiper-slide>
@@ -162,10 +161,24 @@
 
 
             <div class="new">
-                <h1 class="h1">2020年学历报考信息了解专区</h1>
+                <h1 class="h1" style="margin-top:67px">2020年学历报考信息了解专区</h1>
                 <div class="new-one">
-                    <div class="new-one-swiper" style="width:425px;height:183px">
-                        滚动图
+                    <div class="new-one-swiper" style="width:425px;height:270px;margin-right:30px">
+                        <swiper ref="mySwipers" :options="swiperOptions" >
+                            <swiper-slide>
+                                <img src="../static/img/wipe_pic1.png" alt="" style="width:100%;height:286px">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="../static/img/wipe_pic2.png" alt="" style="width:100%;height:286px">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="../static/img/wipe_pic3.png" alt="" style="width:100%;height:286px">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="../static/img/wipe_pic5.png" alt="" style="width:100%;height:286px">
+                            </swiper-slide>
+                            <div class="swiper-pagination" slot="pagination"></div>
+                        </swiper>
                     </div>
                     <div class="new-one-info">
                         <h1>2020学历提升报考指南，新人必备</h1>
@@ -230,7 +243,7 @@
 
 
              <div class="promote">
-                <h1 class="header-title h1" style="margin-top:40px">提升学历
+                <h1 class="header-title h1" style="margin-top:70px">提升学历
                     <span>四大</span>
                     <span class="red">正规形式</span>解析
                 </h1>
@@ -290,7 +303,7 @@
 
             
             <div class="browse" style="padding-bottom:50px">
-                <h1 class="h1" style="margin-top:60px">
+                <h1 class="h1" style="margin-top:40px">
                     <span class="red">100</span>次浏览
                     &nbsp
                     不如 <span class="red">1 </span>次问个清楚
@@ -570,6 +583,58 @@
                 </div>
             </div>
 
+            
+            
+
+            <div style="display:flex;justify-content: center;font-size: 50px;text-align: center;
+            margin-top:40px;background:#EEF3F9;padding-top:40px;">
+                <h1 style="font-size:50px">知识改变命运</h1>
+                <div style="width:4px;height:50px;background:red;margin:9px 8px"></div>
+                <h1 style="font-size:50px">学历祝你成功</h1>
+            </div>
+
+            <div class="many-img" style="
+                    margin: 20px auto;
+                    padding-bottom:40px;
+                    padding-top: 40px;
+                    background:#EEF3F9;
+                    display: flex;
+                    margin-top: 0px;
+                    justify-content: center;">
+                <div class="img-container">
+                    <div class="many-img-item-wrapper">
+                    <div class="many-img-item" style="margin-top: 65px; text-align: right;">
+                        <img src="../static/img/1.jpg" alt="" style="width: 320px;" />
+                    </div>
+
+                    <div class="many-img-item">
+                        <img src="../static/img/2.png" alt="" style="width: 320px;" />
+                    </div>
+                    <div class="many-img-item" style="margin-top: 42px;">
+                        <img src="../static/img/3.png" alt="" style="width: 320px;" />
+                    </div>
+                    </div>
+                    <div class="many-img-item" style="margin-left: 330px; position: relative; height: 209px;">
+                    <img src="../static/img/7.png" alt="" style="width: 320px; position: absolute; top: -18px;" />
+                    </div>
+
+                    <div class="many-img-item-wrapper">
+                    <div class="many-img-item" style="margin-top: -31px;">
+                        <img src="../static/img/4.png" alt="" style="width: 320px;" />
+                    </div>
+
+                    <div class="many-img-item" style="margin-top: 16px;">
+                        <img src="../static/img/5.png" alt="" style="width: 320px;" />
+                    </div>
+                    <div class="many-img-item" style="margin-top: -30px;">
+                        <img src="../static/img/6.png" alt="" style="width: 320px;" />
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div class="benefit">
                 <h1 class="h1" style="margin-top:70px;margin-bottom:45px">
                     提升一次学历，您将受益终生
@@ -677,32 +742,35 @@
                     </div>
                 </div>
             </div>
+
+            
+
             <div class="certificate">
                 <img src="../static/img/zheng.png" alt="" style="width:90%;margin-left:5%;height:65px;transform:scaleY(0.9);">
                 <!-- <div class="certificate-line"></div>
                 <div class="certificate-name">
                     <div class="certificate-title">证书样本</div>
                 </div> -->
-                <div class="certificate-content"  style="position:relative;vertical-align:middle;">
-                    <swiper ref="mySwiper" :options="swiperOptions2">
-                        <swiper-slide style="position:relative;vertical-align:middle;">
+                <div class="certificate-content">
+                    <swiper ref="mySwiper" :options="swiperOptions2" style="height:320px;position:relative;vertical-align:middle;">
+                        <swiper-slide style="position:relative;vertical-align:middle;display:flex;align-items:center;">
                             
                                 <img src="../static/img/国3.jpg" alt="" style="width:90%">
                         </swiper-slide>
-                        <swiper-slide style="position:relative;vertical-align:middle;">
+                        <swiper-slide style="position:relative;vertical-align:middle;display:flex;align-items:center;">
                             
                                 <img src="../static/img/国4.png" alt="" style="width:90%">
                         </swiper-slide>
-                        <swiper-slide style="position:relative;vertical-align:middle;">
+                        <swiper-slide style="position:relative;vertical-align:middle;display:flex;align-items:center;">
                             
                                 <img src="../static/img/国开学位证.jpg" alt="" style="width:90%">
                         </swiper-slide>
-                        <swiper-slide style="position:relative;vertical-align:middle;">
+                        <swiper-slide style="position:relative;vertical-align:middle;display:flex;align-items:center;">
                             
                                 <img src="../static/img/1236.jpg" alt="" style="width:90%">
                         </swiper-slide>
                         
-                        <swiper-slide style="position:relative;vertical-align:middle;">
+                        <swiper-slide style="position:relative;vertical-align:middle;display:flex;align-items:center;">
                             
                                 <img src="../static/img/国9.jpg" alt="" style="width:90%">
                         </swiper-slide>
@@ -743,6 +811,17 @@
             </div>
         </div>
         </div>
+        <div class="rightbar">
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">热门院校</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">易过专业</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">加分政策</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">免考科目</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">免考条件</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">考前资料</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">助&nbsp;学&nbsp;金</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">毕业时间短</button>
+            <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">更&nbsp;&nbsp;&nbsp;&nbsp;多</button>
+        </div>
     </div>
 </template>
 
@@ -761,7 +840,7 @@ export default {
                     el: '.swiper-pagination',
                 },
                 autoplay: {
-                    delay: 10000,
+                    delay: 5000,
                     stopOnLastSlide: false,
                     disableOnInteraction: true,
                     loop:true
@@ -770,18 +849,15 @@ export default {
                 
             },
             swiperOptions2: {
-                pagination: {
-                    el: '.swiper-pagination2',
-                },
-                // navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                // },
-                loop:true,
-                slidesPerView: 'auto',
-                autoplay: true,
-                slidesPerView:3,   //页面分组显示，这里显示为3组
-                spaceBetween:30
+                slidesPerView: 3,
+                autoplay: {
+            　　　　delay: 3000,
+            　　    disableOnInteraction: false
+　　            },   //页面分组显示，这里显示为3组
+                spaceBetween:10,
+                loop: true,
+                observer:true,//修改swiper自己或子元素时，自动初始化swiper 
+　　            observeParents:true,
             },
             tabBar: ['电大国开','远程教育','成人高考','自学考试','院校毕业','热门专业'],
             cardArr: [
@@ -807,7 +883,7 @@ export default {
       }
     },
     mounted() {
-      this.swiper.slideTo(0, 1000, false)
+        this.swiper.slideTo(0, 1000, false)
     }
 }
 </script>
@@ -1532,6 +1608,9 @@ export default {
     line-height: 25px;
     text-align: center;
 }
+.new-one-item-advisory:hover{
+    color: red;
+}
 .new-two-wrapper{
     display: flex;
     margin-top: 20px;
@@ -1590,8 +1669,53 @@ export default {
 };
 
 
+.many-img {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.many-img-item-wrapper {
+    display: flex;
+    width: 100%;
+}
+.many-img-item-wrapper img {
+}
+.many-img-item {
+    /* flex: 1; */
+    /* width: 33%; */
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.re {
+    position: relative;
+}
+.new-two-item:hover{
+    color: red;
+}
 
-
-
+.rightbar {
+    background: url("../static/img/rightbar-bg.png") no-repeat 0 0;
+    width: 134px;
+    height: 516px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    margin-top: -258px;
+    z-index: 9999;
+    padding-top: 163px;
+}
+.rightbar-btn {
+    background: url("../static/img/rightbar-btn.png") no-repeat 0 0;
+    width: 120px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    color: #403400;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 4px 13px;
+}
 
 </style>
