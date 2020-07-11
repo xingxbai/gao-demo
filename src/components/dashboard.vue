@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-11 23:21:30
+ * @LastEditTime: 2020-07-11 23:31:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -114,7 +114,7 @@
                     方案
                 </h1>
                 <div class="project_content" style="width:100%">
-                    <img src="../static/img/灯泡.png" alt="" style="width:35px">
+                    <img src="../static/img/灯泡.png" alt="" style="width:35px;height:35px">
                 </div>
                 <div class="project-content">
                     <p>无论你什么学历，总有一种方案属于你</p>
@@ -248,7 +248,7 @@
                     <span class="red">正规形式</span>解析
                 </h1>
                 <div class="promote_content">
-                    <img src="../static/img/灯泡.png" alt="" style="width:35px">
+                    <img src="../static/img/灯泡.png" alt="" style="width:35px;height:35px">
                 </div>
                 <div class="promote-content">
                     <p>总有一种适合你</p>
@@ -1108,7 +1108,7 @@ export default {
 }
 .project_content::before{
     content:"";
-    width: 34%;
+    width: 33%;
     height: 0px;
     left: 14%;
     top: 17px;
@@ -1118,7 +1118,7 @@ export default {
 }
 .project_content::after{
     content:"";
-    width: 34%;
+    width: 33%;
     height: 0px;
     right: 14%;
     top: 17px;
@@ -1138,7 +1138,7 @@ export default {
 }
 .promote_content::before{
     content:"";
-    width: 47%;
+    width: 46%;
     height: 0px;
     left: 0;
     top: 17px;
@@ -1148,7 +1148,7 @@ export default {
 }
 .promote_content::after{
     content:"";
-    width: 47%;
+    width: 46%;
     height: 0px;
     right: 0;
     top: 17px;
