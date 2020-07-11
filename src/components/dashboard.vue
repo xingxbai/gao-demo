@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-10 23:30:07
+ * @LastEditTime: 2020-07-11 23:21:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -514,31 +514,31 @@
                                     <div style="flex:1">
                                         大概多久能拿到证书?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;width:75px;height:35px" class="watchAnswer" >查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         学历含金量高不高?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer" >查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         需要到校参加考试么?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer" >查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         有没有不用去学校的，简单的?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         工作忙，时间少，怎么升学历?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                             </div>
                             <div class="question-content-item-middle">
@@ -552,31 +552,31 @@
                                     <div style="flex:1">
                                         初中毕业可以升学历吗?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         考证时间多长?有简单的吗?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         女生学习什么专业好呢?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         既便宜又好过的是哪种?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                                 <div class="question-item">
                                     <div style="flex:1">
                                         可以不去学校上课吗?
                                     </div>
-                                    <div style="background:#2F97C6;padding: 0px 12px;color:#FFF;width:75px;height:35px">查看答案</div>
+                                    <div style="background:#2F97C6;padding: 0px 12px;width:75px;height:35px" class="watchAnswer">查看答案</div>
                                 </div>
                             </div>
                     </div>
@@ -585,54 +585,58 @@
 
             
             
+            <div id="manyImg">
 
-            <div style="display:flex;justify-content: center;font-size: 50px;text-align: center;
-            margin-top:40px;background:#EEF3F9;padding-top:40px;">
-                <h1 style="font-size:50px">知识改变命运</h1>
-                <div style="width:4px;height:50px;background:red;margin:9px 8px"></div>
-                <h1 style="font-size:50px">学历祝你成功</h1>
-            </div>
+            
+                <div style="display:flex;justify-content: center;font-size: 50px;text-align: center;
+                margin-top:40px;padding-top:40px;">
+                    <h1 style="font-size:50px">知识改变命运</h1>
+                    <div style="width:4px;height:50px;background:red;margin:9px 8px"></div>
+                    <h1 style="font-size:50px">学历祝你成功</h1>
+                </div>
 
-            <div class="many-img" style="
-                    margin: 20px auto;
-                    padding-bottom:40px;
-                    padding-top: 40px;
-                    background:#EEF3F9;
-                    display: flex;
-                    margin-top: 0px;
-                    justify-content: center;">
-                <div class="img-container">
-                    <div class="many-img-item-wrapper">
-                    <div class="many-img-item" style="margin-top: 65px; text-align: right;">
-                        <img src="../static/img/1.jpg" alt="" style="width: 320px;" />
-                    </div>
+                <div class="many-img" style="
+                        margin: 20px auto;
+                        padding-bottom:40px;
+                        padding-top: 40px;
+                        display: flex;
+                        width:100%;
+                        height: 770px;
+                        box-sizing:border-box;
+                        margin-top: 0px;
+                        justify-content: center;">
+                    <div class="img-container">
+                        <div class="many-img-item-wrapper">
+                        <div class="many-img-item" style="margin-top: 45px; text-align: right;">
+                            <img src="../static/img/1.jpg" alt="" style="width: 320px;" />
+                        </div>
 
-                    <div class="many-img-item">
-                        <img src="../static/img/2.png" alt="" style="width: 320px;" />
-                    </div>
-                    <div class="many-img-item" style="margin-top: 42px;">
-                        <img src="../static/img/3.png" alt="" style="width: 320px;" />
-                    </div>
-                    </div>
-                    <div class="many-img-item" style="margin-left: 330px; position: relative; height: 209px;">
-                    <img src="../static/img/7.png" alt="" style="width: 320px; position: absolute; top: -18px;" />
-                    </div>
+                        <div class="many-img-item" style="margin-top:10px">
+                            <img src="../static/img/10.jpg" alt="" style="width: 320px;" />
+                        </div>
+                        <div class="many-img-item" style="margin-top: 45px;">
+                            <img src="../static/img/3.png" alt="" style="width: 320px;" />
+                        </div>
+                        </div>
+                        <div class="many-img-item" style="margin-left: 330px; margin-top:-14px;position: relative; height: 209px;">
+                        <img src="../static/img/6.png" alt="" style="width: 320px; position: absolute; top: -18px;" />
+                        </div>
 
-                    <div class="many-img-item-wrapper">
-                    <div class="many-img-item" style="margin-top: -31px;">
-                        <img src="../static/img/4.png" alt="" style="width: 320px;" />
-                    </div>
+                        <div class="many-img-item-wrapper" style="margin-top: -25px;">
+                        <div class="many-img-item" style="margin-top: -31px;">
+                            <img src="../static/img/2.png" alt="" style="width: 320px;" />
+                        </div>
 
-                    <div class="many-img-item" style="margin-top: 16px;">
-                        <img src="../static/img/5.png" alt="" style="width: 320px;" />
-                    </div>
-                    <div class="many-img-item" style="margin-top: -30px;">
-                        <img src="../static/img/6.png" alt="" style="width: 320px;" />
-                    </div>
+                        <div class="many-img-item" style="margin-top: 16px;">
+                            <img src="../static/img/4.png" alt="" style="width: 320px;" />
+                        </div>
+                        <div class="many-img-item" style="margin-top: -30px;">
+                            <img src="../static/img/7.png" alt="" style="width: 320px;" />
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
 
 
             <div class="benefit">
@@ -1095,7 +1099,7 @@ export default {
 .project_content{
     width: 72%;
     position: relative;
-    
+    height: 35px;
     margin: 0 auto;
     margin-top: 5px;
     display: flex;
@@ -1125,7 +1129,7 @@ export default {
 .promote_content{
     width: 72%;
     position: relative;
-    
+    height: 35px;
     margin: 0 auto;
     margin-top: 5px;
     display: flex;
@@ -1567,6 +1571,9 @@ export default {
 }
 .new-one-info{
     flex: 1;
+    min-width: 600px;
+
+    
     border: 1px solid #eae7e3;
     -webkit-box-shadow: 1px 2px 3px 0 #f0ece7;
     box-shadow: 1px 2px 3px 0 #f0ece7;
@@ -1669,12 +1676,13 @@ export default {
 };
 
 
-.many-img {
+.dashborad .body .many-img{
     width: 80%;
     margin: 0 auto;
     padding-top: 60px;
     display: flex;
     justify-content: center;
+    background: red;
 }
 .many-img-item-wrapper {
     display: flex;
@@ -1718,4 +1726,16 @@ export default {
     margin: 0 0 4px 13px;
 }
 
+#manyImg{
+    background: url(../static/img/way-bg.jpg) no-repeat center;
+}
+.img-container >>> img {
+    height:212px;
+}
+.question-content .question-content-wrapper .watchAnswer{
+    color:#fff;
+}
+.question-content .question-content-wrapper .watchAnswer:hover{
+    color:red;
+}
 </style>
