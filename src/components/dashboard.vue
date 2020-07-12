@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-11 23:31:01
+ * @LastEditTime: 2020-07-12 17:45:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -37,9 +37,9 @@
                 <swiper-slide>
                     <img src="../static/img/001.jpg" alt="" style="width:100%;">
                 </swiper-slide>
-                <swiper-slide>
+                <!-- <swiper-slide>
                     <img src="../static/img/002.jpg" alt="" style="width:100%;">
-                </swiper-slide>
+                </swiper-slide> -->
                 <swiper-slide>
                     <img src="../static/img/01.jpg" alt="" style="width:100%;">
                 </swiper-slide>
@@ -590,13 +590,13 @@
             
                 <div style="display:flex;justify-content: center;font-size: 50px;text-align: center;
                 margin-top:40px;padding-top:40px;">
-                    <h1 style="font-size:50px">知识改变命运</h1>
-                    <div style="width:4px;height:50px;background:red;margin:9px 8px"></div>
+                    <h1 style="font-size:50px;margin-right:50px">知识改变命运</h1>
+                    <!-- <div style="width:4px;height:50px;background:red;margin:9px 8px"></div> -->
                     <h1 style="font-size:50px">学历祝你成功</h1>
                 </div>
 
                 <div class="many-img" style="
-                        margin: 20px auto;
+                        margin: 0 auto;
                         padding-bottom:40px;
                         padding-top: 40px;
                         display: flex;
@@ -640,7 +640,7 @@
 
 
             <div class="benefit">
-                <h1 class="h1" style="margin-top:70px;margin-bottom:45px">
+                <h1 class="h1" style="margin-top:0px;margin-bottom:45px;">
                     提升一次学历，您将受益终生
                 </h1>
                 <div class="benefit-content" style="margin-top:20px;font-size:16px">
@@ -755,8 +755,8 @@
                 <div class="certificate-name">
                     <div class="certificate-title">证书样本</div>
                 </div> -->
-                <div class="certificate-content">
-                    <swiper ref="mySwiper" :options="swiperOptions2" style="height:320px;position:relative;vertical-align:middle;">
+                <div class="certificate-content" >
+                    <swiper ref="mySwiper" :options="swiperOptions2" style="height:320px;widht:90%">
                         <swiper-slide style="position:relative;vertical-align:middle;display:flex;align-items:center;">
                             
                                 <img src="../static/img/国3.jpg" alt="" style="width:90%">
@@ -778,6 +778,8 @@
                             
                                 <img src="../static/img/国9.jpg" alt="" style="width:90%">
                         </swiper-slide>
+                        <div class="swiper-button-prev" slot="button-prev"></div>
+                        <div class="swiper-button-next" slot="button-next"></div>
                         <!-- <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div> -->
                     </swiper>
@@ -860,6 +862,10 @@ export default {
 　　            },   //页面分组显示，这里显示为3组
                 spaceBetween:10,
                 loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper 
 　　            observeParents:true,
             },
@@ -1407,6 +1413,9 @@ export default {
 } */
 .benefit {
     width: 100%;
+    padding-top:70px;
+    padding-bottom:40px;
+    background: url("../static/img/way-bg.jpg") no-repeat center;
 }
 .benefit-content-wrapper{
     display: inline-block;
@@ -1727,7 +1736,9 @@ export default {
 }
 
 #manyImg{
-    background: url(../static/img/way-bg.jpg) no-repeat center;
+    /* background: url(../static/img/so-bg.jpg) no-repeat -10px 70px; */
+    background: url(../static/img/purpose_bg.jpg) no-repeat -370px 0 ;
+    background-size: 146% 1100px;
 }
 .img-container >>> img {
     height:212px;
