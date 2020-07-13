@@ -1,13 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-13 23:17:58
+ * @LastEditTime: 2020-07-13 23:44:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
 --> 
 <template>
-    <div class="dashborad">
+    <div>
+    <div class="dashborad" v-if="currentDevice === 'pc'">
         <div class="header">
             <div class="logo">
                 <img src="../static/img/img3.png" alt="" style="width: 85px">
@@ -829,16 +830,22 @@
             <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">更&nbsp;&nbsp;&nbsp;&nbsp;多</button>
         </div>
     </div>
+
+
+    <div v-else>
+        <phonePage/>
+    </div>
+    </div>
 </template>
 
 <script>
 //import { swiper, swiperSlide } from 'vue-awesome-swiper'
 //import Swiper from 'swiper';
+import phonePage from './phonePage'
 export default {
-    // components: {
-    //     swiper,
-    //     swiperSlide
-    // },
+    components: {
+        phonePage,
+    },
     data () {
         return {
             swiperOptions: {
@@ -852,7 +859,6 @@ export default {
                     loop:true
                 },
                 loop:true
-                
             },
             swiperOptions2: {
                 slidesPerView: 3,
@@ -884,17 +890,12 @@ export default {
             ],
             newTwoData: ['考试时间','考试科目','考试教材','报名咨询','报名条件','毕业时间','学位咨询'],
             newThreeLeftData: ['[动态]    关于2020年成人学历报考通告>>','[动态]    关于2020年成人学历招生简章>>','[动态]    2020年成人学历报考管理办法>>','[动态]    2020年上半年学历报考院校及专业咨询>>'],
-            newThreeRightData: ['[政策]    2020年学历报考及考试政策信息汇总>>','[试听]    学历考试培训课程免费试听>>','[经验]    新生学历报考备考经验>>','[模拟]    学历报考各专业考试模拟题汇总>>']
+            newThreeRightData: ['[政策]    2020年学历报考及考试政策信息汇总>>','[试听]    学历考试培训课程免费试听>>','[经验]    新生学历报考备考经验>>','[模拟]    学历报考各专业考试模拟题汇总>>'],
+            currentDevice: 'pc'
         }
     },
-    computed: {
-      swiper() {
-        return this.$refs.mySwiper.$swiper
-      }
-    },
-    mounted() {
-        this.swiper.slideTo(0, 1000, false)
-        this.browserRedirect();
+    created () {
+        this.currentDevice = this.browserRedirect();
     },
     methods: {
         browserRedirect() {
@@ -909,9 +910,9 @@ export default {
             var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
             var bIsWX = sUserAgent.match(/MicroMessenger/i)=="micromessenger"
             if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || bIsWX) {
-                alert(" 您的浏览设备为： phone");
+                return 'phone'
             } else {
-                alert(" 您的浏览设备为： pc");
+                return 'pc'
             }
         }
     }
