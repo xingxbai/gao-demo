@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-12 17:45:14
+ * @LastEditTime: 2020-07-13 21:03:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -59,7 +59,7 @@
                 </div>
             </div> -->
             <div class="overview">
-                <h1 class="h1" style="margin-top:50px">
+                <h1 class="h1" style="margin-top:-5px;padding-top:40px">
                     大专本科<span class="red">报考信息概览</span>
                 </h1>
                 <div class="pag-content">
@@ -1018,6 +1018,7 @@ export default {
 .overview{
     padding: 0 14%;
     text-align: center;
+    background: url("../static/img/four-bg.jpg") no-repeat -120px 0;
 }
 .overflow-img{
     /* padding: 0 10%; */
