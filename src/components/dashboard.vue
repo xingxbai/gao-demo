@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-13 21:03:15
+ * @LastEditTime: 2020-07-13 23:17:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -59,7 +59,7 @@
                 </div>
             </div> -->
             <div class="overview">
-                <h1 class="h1" style="margin-top:-5px;padding-top:40px">
+                <h1 class="h1" style="margin-top:-5px">
                     大专本科<span class="red">报考信息概览</span>
                 </h1>
                 <div class="pag-content">
@@ -894,6 +894,26 @@ export default {
     },
     mounted() {
         this.swiper.slideTo(0, 1000, false)
+        this.browserRedirect();
+    },
+    methods: {
+        browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            var bIsWX = sUserAgent.match(/MicroMessenger/i)=="micromessenger"
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || bIsWX) {
+                alert(" 您的浏览设备为： phone");
+            } else {
+                alert(" 您的浏览设备为： pc");
+            }
+        }
     }
 }
 </script>
