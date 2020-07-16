@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-13 23:41:59
- * @LastEditTime: 2020-07-13 23:45:35
+ * @LastEditTime: 2020-07-13 23:51:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\phonePage.vue
@@ -10,7 +10,7 @@
     <div class="phone">
         <h1>this is phone page</h1>
 
-        <swiper ref="mySwipers" :options="swiperOptions" >
+        <swiper ref="mySwipers" :options="swiperOptions"  >
                     <swiper-slide>
                         <img src="../static/img/001.jpg" alt="" style="width:100vw;">
                     </swiper-slide>

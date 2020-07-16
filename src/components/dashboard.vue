@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-13 23:44:05
+ * @LastEditTime: 2020-07-16 20:54:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -1759,7 +1759,7 @@ export default {
 
 #manyImg{
     /* background: url(../static/img/so-bg.jpg) no-repeat -10px 70px; */
-    background: url(../static/img/purpose_bg.jpg) no-repeat -370px 0 ;
+    background: url(../static/img/100-1.jpg) no-repeat -370px 0 ;
     background-size: 146% 1100px;
 }
 .img-container >>> img {
