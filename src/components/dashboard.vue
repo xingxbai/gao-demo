@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-16 20:54:04
+ * @LastEditTime: 2020-07-16 22:14:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -76,8 +76,8 @@
                             <p style="position:absolute;left:45%;bottom:-33px;font-size:22px;color:#fff">大专毕业</p>
                             <p style="position:absolute;left:80%;bottom:-33px;font-size:22px;color:#fff">中专毕业</p>
                             <div class="circle">
-                                <p>年满十八岁</p>
-                                <p>均可报名</p>
+                                <p class="year18">年满十八岁</p>
+                                <p class="report">均可报名</p>
                             </div>
                         </div>
                         
@@ -1770,5 +1770,11 @@ export default {
 }
 .question-content .question-content-wrapper .watchAnswer:hover{
     color:red;
+}
+.detail:hover{
+    transform:scale(1.1);
+}
+.more:hover{
+    color: red;
 }
 </style>

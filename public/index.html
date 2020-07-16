@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-02-18 20:02:47
- * @LastEditTime: 2020-07-13 23:12:25
+ * @LastEditTime: 2020-07-16 22:26:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \SellingPlat\public\index.html
@@ -13,6 +13,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_830376_qzecyukz0s.css">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c61d61dd9ffe212b5c75c1120a77a99b";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
     <title>成人学历提升中心</title>
     <style>
       div{
@@ -29,5 +38,17 @@
     </div> -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <script>
+      const classMap = ['tabbar-item','year18','report','project-bottom red-border','new-one-item-advisory',
+      'new-two-item','detail','promote-bottom red-border','more','watchAnswer','watch-result',
+      'benefit-content-item-footer','rightbar-btn']
+      const body = document.querySelector('body')
+      body.addEventListener('click',(e)=>{
+        if (classMap.indexOf(e.target.className) != -1){
+          window.open('http://p.qiao.baidu.com/cps/chat?siteId=15320981&userId=30868393&siteToken=c61d61dd9ffe212b5c75c1120a77a99b')
+        }
+      })
+    </script>
   </body>
 </html>
