@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-25 09:16:01
+ * @LastEditTime: 2020-07-25 09:40:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -816,7 +816,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> 
         </div>
         <div class="rightbar">
             <button type="button" class="rightbar-btn" onclick="return openJesongChatByGroup(12521,19467);">热门院校</button>
