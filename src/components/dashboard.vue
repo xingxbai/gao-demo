@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 21:10:20
- * @LastEditTime: 2020-07-16 22:14:32
+ * @LastEditTime: 2020-07-25 09:16:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-demo\src\components\dashboard.vue
@@ -22,7 +22,7 @@
                 <div class="phone-top"> 
                     <img src="../static/img/座机.png" alt="" style="width:18px;margin-right:5px;">
                     <p style="letter-spacing: 1px;">
-                        029 - 88758048
+                        029 - 88758408
                     </p>
                 </div>
                 <p>学信网<span class="red">终身可查、</span>正规学历、国家承认</p>
@@ -812,7 +812,7 @@
                 <div class="phone-top" style="width:300px;height:50px;right: 10px;left:0;margin-top:10px;color:#fff;border:1px dashed #fff"> 
                     <img src="../static/img/座机.png" alt="" style="width:30px;margin-right:5px;">
                     <p style="letter-spacing: 1px;color:#fff;font-size:30px">
-                        029 - 88758048
+                        029 - 88758408
                     </p>
                 </div>
             </div>
