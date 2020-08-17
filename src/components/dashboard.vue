@@ -159,7 +159,10 @@
                 </div>
             </div> -->
 
-
+            <div class="wechat-img">
+                <img src="../static/img/wechat2.jpg" style="width:100%"/>
+                
+            </div>
 
             <div class="new">
                 <h1 class="h1" style="margin-top:67px">2020年学历报考信息了解专区</h1>
@@ -1570,6 +1573,11 @@ export default {
     display: flex;
     padding: 0 14%;
 }
+.wechat-img{
+    position:relative;
+    font-size: 0px;
+    background: #3083ab;
+}
 .wechat-compress{
     display: flex;
 }
@@ -1755,6 +1763,10 @@ export default {
     font-weight: 600;
     display: block;
     margin: 0 0 4px 13px;
+}
+.rightbar-btn:hover{
+    color: red;
+    cursor: pointer;
 }
 
 #manyImg{
